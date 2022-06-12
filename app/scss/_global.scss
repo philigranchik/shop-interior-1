@@ -22,45 +22,66 @@ body {
 .main {
 	flex: 1 0 auto;
 }
+
 .footer {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
-.container-fluid{
+.container-fluid {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
 
 .slick-dots {
-      display: flex;
-			justify-content: center;
-			align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-			li{
-				margin: 0 15px;
-			}
-			button{
-				background-color: $title;
-				border: none;
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				padding: 0;
-				font-size: 0;
-			}  
-			li.slick-active{
-				button {
-					background-color: #ffef35;
-				}
-			}
+	li {
+		margin: 0 15px;
+	}
+
+	button {
+		background-color: $title;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+	}
+
+	li.slick-active {
+		button {
+			background-color: #ffef35;
+		}
+	}
 }
 
+.info-email {
+	font-weight: 600;
+	font-size: 14px;
+	color: $title;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
 
+	&::before {
+		content: '';
+		background-image: url(../images/envelope.svg);
+		position: absolute;
+		left: 0;
+		width: 16px;
+		top: 8px;
+		height: 12px;
 
+	}
+}
